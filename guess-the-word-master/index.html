@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Guess The Word Game | devChallenges.io</title>
+</head>
+
+<body>
+  <!-- 
+
+  Word Scramblle
+
+  Tries (4/5):
+
+  Mistakes:  a, e, w, t 
+  
+  Random
+  
+  Reset
+  -->
+  <div class="container">
+    <!-- Word Scramblle -->
+    <img src="resources/word-scramblle-logo.svg" alt="Word Scramblle Logo" class="logo" />
+    <!-- Scrumbled Word -->
+    <div class="scrambled-word" id="scrambledWord"></div>
+    <div class="info">
+      <!-- Tries (4/5) -->
+      <div class="tries-container">
+        <p id="tries">Tries <span id="triesCount">0</span>/5</p>
+        <div class="dots" id="triesDots"></div>
+      </div>
+      <!-- Mistakes:  a, e, w, t  -->
+      <p id="mistakes">Mistakes: <span id="mistakesList"></span></p>
+    </div>
+    <div class="input-container" id="inputContainer">
+      <!-- Input fields for each letter of the word (dynamic) depending on the scrambledWord length -->
+    </div>
+    <div id="result"></div>
+    <div class="buttons">
+      <!-- Random -->
+      <button class="random-button" id="randomButton">Random</button>
+      <!-- Reset -->
+      <button class="reset-button" id="resetButton">Reset</button>
+    </div>
+  </div>
+
+  <div class="author-info">
+    Coded by <a href="https://www.linkedin.com/in/fredmkalumba/" target="_blank">Fred Kalumba</a> | Challenge by
+    <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
