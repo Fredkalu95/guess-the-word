@@ -96,7 +96,7 @@ function resetGame() {
 
 function updateTries() {
     // Update tries 
-    document.getElementById("tries").textContent = `Tries ${tries}/5`;
+    document.getElementById("tries").textContent = `Tries (${tries}/5)`;
     const triesDots = document.getElementById("triesDots");
     triesDots.innerHTML = "";
     for (let i = 0; i < TOTAL_TRIES; i++) {
